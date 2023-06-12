@@ -1,3 +1,5 @@
+//This is index.js
+
 import '../app/globals.css';
 import Editor from './components/editor.jsx';
 import { useRef } from 'react';
