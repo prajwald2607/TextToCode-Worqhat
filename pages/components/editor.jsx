@@ -16,6 +16,11 @@ export default function CodeEditor({ editorRef }) {
       defaultLanguage="python"
       ref={editorRef}
       margin="auto"
+      options={{
+        readOnly: true,
+        wordWrap: "wordWrapRow", // Enable word wrapping at a specific column
+        wordWrapRow: 10,
+      }}
     />
   );
 }
