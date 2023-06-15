@@ -93,12 +93,7 @@ export default function Home() {
       <button id="generateButton" onClick={handleGenerateCodeClick}>
         {loading ? 'Generating...' : 'Generate Code'}
       </button>
-      <div>
-        <h2>By</h2>
-        <a href="https://worqhat.com">
-          <Image src={mypic} alt="Picture of the author" />
-        </a>
-      </div>
+      
       {selectedLanguage && <SelLanguage selectedLanguage={selectedLanguage} />}
       <div className="edit">
         <Editor
@@ -113,6 +108,12 @@ export default function Home() {
           }}
         />
         <br />
+      </div>
+      <div>
+        <h2>By</h2>
+        <a href="https://worqhat.com">
+          <Image src={mypic} alt="Picture of the author" />
+        </a>
       </div>
     </div>
   );
